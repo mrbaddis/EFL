@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>728x90</title>
+<link rel="stylesheet" href="style.css">
+<meta name="ad.size" content="width=728,height=90">  
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script>
+
+      var clickTag = "http://www.google.org";
+
+      function resizeWindow()
+
+      {
+
+        $('p').css({ 'width':'100%', 'text-align':'center' });
+
+        var h1 = $('h1').height();
+
+        var h = h1/2;
+
+        var WinHeight = $(window).height();
+
+        var w = WinHeight/2;
+
+        var m = w - h;
+
+        var WinWidth=$(window).width();
+
+        $('p').css("margin-top",m + "px");
+
+        $("p").text("Size="+WinWidth+"x"+WinHeight);
+
+      }
+
+      $(document).ready(function () {
+
+        resizeWindow();
+
+      });
+
+      $(window).resize(function () {
+
+        resizeWindow();
+
+      });
+
+     </script>
+
+</head>
+
+<body>
+
+<a href="javascript:window.open(window.clickTag)">
+<div id="click_screen">
+<div class="container">
+
+<!--<div id="tag"><img src="tag.png" width="136" height="19"></div>-->
+<div id="logo2"><img src="logo2.png" width="728" height="90"></div>
+<div id="learn_more"><img src="learn_more.png" width="135" height="32"></div>
+<div id="together_end_frame"><img src="together_end_frame.png" width="118" height="37"></div>
+<div id="end_frame_heart"><img src="heart.png" width="164" height="144"></div>
+<div id="end_frame_back"></div>
+
+
+<div id="left_heart"><img src="left_heart.png" width="728" height="90"></div>
+<div id="right_heart"><img src="right_heart.png" width="728" height="90"></div>
+<div id="together"><img src="together.png" width="272" height="15"></div>
+<div id="pink_heart"><img src="pink_heart.png" width="728" height="90"></div>
+<div id="together_forever"><img src="together_forever.png" width="728" height="90"></div>
+<div id="main_text"><img src="main_text.png" width="728" height="90"></div>
+<div id="containers"><img src="containers.png" width="728" height="90"></div>
+</div>
+</div>
+</a>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenLite.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/easing/EasePack.min.js"></script>
+
+
+<script type="text/javascript" src="Animation.js"></script> 
+<script src="https://s0.2mdn.net/ads/studio/Enabler.js"> </script>
+
+
+</body>
+</html>
